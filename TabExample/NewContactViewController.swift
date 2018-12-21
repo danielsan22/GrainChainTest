@@ -17,7 +17,11 @@ class NewContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let name = UserDefaults.standard.string(forKey: "name") ?? ""
+        self.navigationItem.title = name
+                
+        self.setupViews()
     }
     
     @IBAction func createContact(_ sender: Any) {

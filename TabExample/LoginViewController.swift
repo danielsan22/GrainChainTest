@@ -39,8 +39,12 @@ class LoginViewController: UIViewController {
         }
         
         AuthenticationService.authenticate(self.tfUsername.text!, self.tfPassword.text!) { (response) in
-            self.performSegue(withIdentifier: "toMain", sender: nil)
+            guard let resp = response else { return }
             
+            if resp.success {
+                UserDefaults.standard.set(resp.name, forKey: "name")
+                self.performSegue(withIdentifier: "toMain", sender: nil)
+            }            
         }
         
     }

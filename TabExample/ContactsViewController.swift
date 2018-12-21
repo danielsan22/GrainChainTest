@@ -52,6 +52,10 @@ class ContactsViewController: UIViewController, UICollectionViewDataSource, UICo
         self.navigationItem.rightBarButtonItem = self.editBtnItem
         
         self.searchBar.delegate = self
+        
+        let name = UserDefaults.standard.string(forKey: "name") ?? ""
+        self.navigationItem.title = name
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

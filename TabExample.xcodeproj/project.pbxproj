@@ -129,6 +129,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		237C9E0121CCB29300D7FF6A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F25D19B21CAE62900B3751B /* ViewController.swift */,
+				6F25D1C721CAEA0E00B3751B /* ContactsViewController.swift */,
+				235B105921CC7AA700457451 /* NewContactViewController.swift */,
+				2346924821CC8A7100B82039 /* MainViewController.swift */,
+				2346924A21CC8C9700B82039 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		6F25D18D21CAE62900B3751B = {
 			isa = PBXGroup;
 			children = (
@@ -154,21 +166,17 @@
 		6F25D19821CAE62900B3751B /* TabExample */ = {
 			isa = PBXGroup;
 			children = (
+				237C9E0121CCB29300D7FF6A /* Controllers */,
 				237C9DFE21CCA8B400D7FF6A /* Extensions */,
 				235B105421CC6D3400457451 /* Utils */,
 				6F6BB2FD21CC227D00E5F79E /* Service */,
 				6F6BB2FA21CC17E400E5F79E /* Entities */,
 				6F25D1C921CAF9B100B3751B /* CustomViews */,
 				6F25D19921CAE62900B3751B /* AppDelegate.swift */,
-				6F25D19B21CAE62900B3751B /* ViewController.swift */,
 				6F25D19D21CAE62900B3751B /* Main.storyboard */,
 				6F25D1A021CAE62B00B3751B /* Assets.xcassets */,
 				6F25D1A221CAE62B00B3751B /* LaunchScreen.storyboard */,
 				6F25D1A521CAE62B00B3751B /* Info.plist */,
-				6F25D1C721CAEA0E00B3751B /* ContactsViewController.swift */,
-				235B105921CC7AA700457451 /* NewContactViewController.swift */,
-				2346924821CC8A7100B82039 /* MainViewController.swift */,
-				2346924A21CC8C9700B82039 /* LoginViewController.swift */,
 			);
 			path = TabExample;
 			sourceTree = "<group>";

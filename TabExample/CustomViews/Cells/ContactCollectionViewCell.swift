@@ -23,10 +23,18 @@ class ContactCollectionViewCell: UICollectionViewCell {
         self.imageView.layer.cornerRadius = self.imageView.layer.bounds.width / 2
         self.imageView.clipsToBounds = true
         self.phoneContainer.layer.cornerRadius = self.phoneContainer.layer.bounds.height / 2
+        self.phoneContainer.layer.masksToBounds = true
+        self.layer.cornerRadius = 4.0
+        
+        self.elevate(2)
+        
+        self.phoneContainer.elevate(4)
+        self.phoneContainer.backgroundColor = UIColor(red:0.38, green:0.49, blue:0.55, alpha:1.0)
+        self.phone.textColor = .white
     }
     
     override func prepareForReuse() {
         //remove the reference of the last values.
     }
-
+    
 }

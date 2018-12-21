@@ -14,6 +14,7 @@ class NewContactViewController: UIViewController {
     @IBOutlet weak var tfLastName: UITextField!
     @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var tfAge: UITextField!
+    @IBOutlet weak var containerV: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,8 @@ class NewContactViewController: UIViewController {
     private func setupViews() {
         self.imageView.clipsToBounds = true
         self.imageView.layer.cornerRadius = self.imageView.layer.frame.width / 2
+        self.containerV.elevate(5)
+        self.containerV.layer.cornerRadius = 4
     }
 }
 

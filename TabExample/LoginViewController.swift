@@ -58,8 +58,6 @@ class LoginViewController: UIViewController {
             self.tfUsername.text != nil && !self.tfUsername.text!.isEmpty && self.tfUsername.text != ""  &&
             self.tfPassword.text != nil && !self.tfPassword.text!.isEmpty && self.tfPassword.text != ""
     }
-    
-    
 }
 
 

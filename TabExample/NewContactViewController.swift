@@ -20,7 +20,7 @@ class NewContactViewController: UIViewController {
         
         let name = UserDefaults.standard.string(forKey: "name") ?? ""
         self.navigationItem.title = name
-                
+        
         self.setupViews()
     }
     
@@ -45,6 +45,7 @@ class NewContactViewController: UIViewController {
     }
     
     private func setupViews() {
+        self.imageView.clipsToBounds = true
         self.imageView.layer.cornerRadius = self.imageView.layer.frame.width / 2
     }
 }

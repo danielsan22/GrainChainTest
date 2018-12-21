@@ -39,7 +39,11 @@ class LoginViewController: UIViewController {
         }
         
         AuthenticationService.authenticate(self.tfUsername.text!, self.tfPassword.text!) { (response) in
-            guard let resp = response else { return }
+            guard let resp = response else {
+                AlertUtilities.presentDefaultAlert(to: self, title: "Attention", content: "Credentials are not valid.")
+                return
+                
+            }
             
             if resp.success {
                 UserDefaults.standard.set(resp.name, forKey: "name")
